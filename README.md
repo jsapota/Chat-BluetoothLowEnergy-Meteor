@@ -5,3 +5,7 @@ Chat application based on MeteorJS and Cordova Bluetooth Low Energy module.
 <b>Jakub Sapota - MeteorJS</b>, <br>
 <b>Wojciech Szymaniec - Cordova Bluetooth module</b>
 
+<h2>To start</h2>
+Clone this repo<br>
+Type: meteor in command window<br>
+while being in project folder

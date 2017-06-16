@@ -1,0 +1,14 @@
+.listOfChats{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.buttonrefresh{
+    margin-top: 10px;
+}
+
+.refreshPadding{
+    padding: 0;
+    margin: 0;
+}

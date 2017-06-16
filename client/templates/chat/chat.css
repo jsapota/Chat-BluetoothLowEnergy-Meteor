@@ -1,0 +1,42 @@
+.chatWindow {
+    margin-top: 20px;
+    height: 300px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.messageWindow{
+    margin-top: 30px;
+}
+
+textarea{
+    resize: none;
+}
+
+.buttonSection, .nickAndTimeMine{
+    margin-top: 10px;
+}
+
+.nickAndTimeMine{
+    border-radius: 5px;
+    border: none;
+    background-color: #3b5998;
+    color: white;
+}
+.message, .nickAndTimeMine{
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.alert {
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.serverMessage{
+    text-align: center;
+}

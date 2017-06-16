@@ -1,0 +1,39 @@
+<template name="landing">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+
+            </div>
+            <div class="jumbotron text-center">
+                <h1>BLE chat!</h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                {{#if nickError}}
+                    <p class="alert">Nie podałeś pseudo </p>
+                {{/if}}
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                <div class="form-group">
+                    <label for="usr" class="input-lg">Nick:</label>
+                    <input type="text" id="nickId" class="nickInput form-control input-lg" placeholder="Twój nick">
+                    {{nickIsEmpty}}
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                <button class="btn btn-facebook btn-lg btn-block buttonNewChat">
+                    Utworz
+                </button>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                <button class="btn btn-facebook btn-lg btn-block buttonJoinChat">
+                    Dołącz
+                </button>
+            </div>
+
+        </div>
+    </div>
+</template>

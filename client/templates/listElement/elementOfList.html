@@ -1,0 +1,12 @@
+<template name="elementOfList">
+        <div class="col-sm-6 chatBlock">
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-3">
+                    <p class="listName"> Czat - {{name}}</p>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-sm btn-block btn-facebook {{#if notClicked}}buttonJoin{{/if}}" value="{{id}}">Dołącz</button>
+                </div>
+            </div>
+        </div>
+</template>

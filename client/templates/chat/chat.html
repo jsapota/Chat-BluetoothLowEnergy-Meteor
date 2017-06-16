@@ -1,0 +1,50 @@
+<template name="chat">
+    <div class="container">
+        <div class="row jumbotron text-center">
+            <h1>BLE chat!</h1>
+        </div>
+        <div class="row chatWindow">
+            <div class="col-sm-12">
+                {{#each chat.newmessage}}
+                    <div class="row">
+                        {{#if server nick}}
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <p class="serverMessage">
+                                    Server - {{short createdAt}}: {{message}}
+                                </p>
+                            </div>
+                        {{else}}
+                            {{#if serverList nick}}
+                                {{updateServerList message}}
+                            {{else}}
+                                <div class="col-sm-6 {{#if me nick}}col-sm-offset-6 {{/if}}" >
+                                    <p class="nickAndTimeMine"
+                                       style="{{#if me nick}} text-align: right {{/if}}">
+                                        {{nick}} - {{short createdAt}}
+                                    </p>
+                                    <p class="message col-sm-12" style="{{#if me nick}} text-align:right;{{/if}}">
+                                        {{message}}
+                                    </p>
+                                </div>
+                            {{/if}}
+                        {{/if}}
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="row messageWindow">
+            <div class="form-group">
+                <textarea class="form-control messageInput" rows="5" id="messageId"></textarea>
+            </div>
+        </div>
+
+        <div class="row buttonSection">
+            {{#if admin}}
+                <button class="btn btn-block btn-facebook buttonMessageAdmin">Wyślij!</button>
+            {{else}}
+                <button class="btn btn-block btn-facebook buttonMessageClient">Wyślij!</button>
+            {{/if}}
+        </div>
+    </div>
+</template>
